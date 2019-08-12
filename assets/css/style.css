@@ -105,12 +105,15 @@ body{
   font-weight: bolder;
   font-size: 120%;
   font-family: cursive; 
+  margin: 50% right; 
+  
 }
 .portfolio {
   color: rgb(106, 188, 194);
   text-align: center;
   padding-top: 1%;
   padding-bottom: 5%;
+  background-color: burlywood; 
 }
 .thumbnailWrapper{
   padding-left: 5%;
@@ -162,8 +165,8 @@ button:hover {
 }
 .footer {
   text-align: center;
-  background-color: rgb(98, 141, 98);
-  color: hsl(0, 26%, 14%);
+  background-color: hsl(182, 74%, 18%);
+  color: whitesmoke; 
   font-size: 100%;
   padding: 1%;
 }
@@ -179,6 +182,7 @@ button:hover {
 }
 #contact-me{
   margin-bottom: 25px; 
+  
 
 
 }
@@ -195,5 +199,7 @@ button:hover {
   margin-right: 20px;
 }
 #main-nav a {
-  color: #fff; 
+  color: cyan; 
+  font-weight: 200px; 
+
 }
