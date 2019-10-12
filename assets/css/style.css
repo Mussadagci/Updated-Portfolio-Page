@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
-
 }
 
-body{
-  font-family: cursive; 
+body {
+  font-family: cursive;
   font-size: 140%;
-  color:beige;
+  color: beige;
 }
 .bg-primary {
   padding-top: 0%;
@@ -14,37 +13,33 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
-
 }
 .navPosition {
-  padding-bottom: 7%;;
-
+  padding-bottom: 7%;
 }
 
-@media screen and (max-width: 710px){
+@media screen and (max-width: 710px) {
   .navPosition {
     padding-bottom: 13%;
   }
 }
 
 .navBorder:hover {
-  background-color: beige; 
-  color: #fff;
+  background-color: beige;
+  color: rgb(31, 51, 88);
   padding: 3%;
- border-radius: 5px;
- padding-bottom: 8%;
+  border-radius: 5px;
+  padding-bottom: 8%;
 }
 .nav-link {
   color: beige important;
   font-weight: bolder;
   font-size: 120%;
-
 }
 
 @media screen and (max-width: 475px) {
   .navPosition {
     font-size: 70%;
-
   }
 }
 
@@ -52,8 +47,7 @@ body{
   width: auto;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color:saddlebrown; 
-  
+  background-color: #0b3370;
 
 }
 .introDiv {
@@ -87,93 +81,82 @@ body{
   border-color: gold;
   border-width: 15px;
   border-bottom-width: 60px;
-  background-color: saddlebrown; 
+  background-color: saddlebrown;
 }
 .bg-secondary {
-  background-color: rgb(80, 79, 148);
-
+  background-color: darkblue;
 }
 
 .aboutSection {
-  text-align: center; 
-  color: beige; 
+  text-align: center;
+  color: beige;
   padding-bottom: 4%;
   padding-top: 1%;
-  font-family: cursive; 
-
+  font-family: cursive;
+  background-color: darkblue;
 }
-.aboutParagraph{
-  text-align: center; 
-  color:beige;
+.aboutParagraph {
+  text-align: center;
+  color: beige;
   font-weight: bolder;
   font-size: 120%;
-  font-family: cursive; 
-  text-align: center; 
-
-  
+  font-family: cursive;
+  text-align: center;
 }
 .portfolio {
-  background-color: #0f7c6a; 
+  background-color: rgb(40, 61, 92);
   text-align: center;
   padding-top: 1%;
   padding-bottom: 5%;
-  color: saddlebrown; 
+  color: beige;
 }
-.thumbnailWrapper{
+.thumbnailWrapper {
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
 }
 
-.imgMod{
+.imgMod {
   width: 200%;
   height: 200%;
   padding: 2%;
-  border-style: solid; 
+  border-style: solid;
   border-color: hsl(71, 59%, 67%);
-  border-width: medium; 
+  border-width: medium;
   margin: 3%;
   margin-bottom: 5%;
   margin-top: 5%;
 }
 .projectName {
-  color:#69e0e0; 
-  font-weight: bolder; 
-
+  color: beige;
+  font-weight: bolder;
 }
 .contact {
   text-align: center;
   padding-top: 1%;
   padding-bottom: 2%;
-  font-family: cursive; 
-  
-  
-  
-  
-
-
+  font-family: cursive;
 }
-.bg-info{
-  background-color: #6ca793;
+.bg-info {
+  background-color: rgb(27, 62, 95);
 }
 button {
   border-radius: 4px;
   margin-bottom: 1%;
-  background-color: #A5cfc9;
-  border-color:#b99494; 
+  background-color: rgba(220, 245, 245, 0.007);
+  border-color: #b99494;
   padding-bottom: 6px;
-  color:turquoise; 
-
+  color: rgb(95, 95, 80);
 }
 
 button:hover {
   background-color: hsl(0, 59%, 74%);
-  color: #0f7c6a;
+  color: grey;
 }
 .footer {
   text-align: center;
-  background-color: saddlebrown; 
-  color: whitesmoke; 
+  background-color: #223655;
+  color: whitesmoke;
   font-size: 100%;
   padding: 1%;
 }
@@ -181,22 +164,18 @@ button:hover {
 #social-media {
   list-style-type: none;
   display: flex;
-  justify-content: center; 
-  margin-top: 25px; 
+  justify-content: center;
+  margin-top: 25px;
 }
 #social-media li {
   margin-right: 20px;
 }
-#contact-me{
-  margin-bottom: 25px; 
-  
-
-
+#contact-me {
+  margin-bottom: 25px;
 }
-#my-email{
-  margin-bottom: 25px; 
+#my-email {
+  margin-bottom: 25px;
 }
-
 
 #skills-div {
   display: flex;
@@ -206,12 +185,34 @@ button:hover {
   margin-right: 20px;
 }
 #main-nav a {
-  color: cyan; 
-  font-weight: 200px; 
-
+  color: beige;
+  font-weight: 200px;
 }
-.fa-fw{
-  color:wheat; 
-  background-color:slateblue; 
+.fa-fw {
+  color: wheat;
+  background-color: rgb(29, 80, 138);
+}
+@keyframes lightSpeedIn {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
 
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-5deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out;
 }
